@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPMB Online - Sekolah Unggulan Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts untuk tampilan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">Edutech SPMB</div>
+            <nav>
+                <a href="#beranda">Beranda</a>
+                <a href="#alur">Alur Pendaftaran</a>
+                <a href="#daftar">Formulir</a>
+                <a href="#data">Daftar Pendaftar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="container">
+            <h1>Penerimaan Murid Baru (SPMB) Tahun Ajaran 2026/2027</h1>
+            <p>Bergabunglah dengan sekolah masa depan yang mencetak generasi unggul, kreatif, dan berkarakter.</p>
+            <a href="#daftar" class="btn-primary">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Alur Pendaftaran -->
+    <section id="alur" class="container section">
+        <h2>Alur Pendaftaran</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <span>1</span>
+                <h3>Isi Formulir</h3>
+                <p>Lengkapi data diri calon siswa melalui form online di bawah.</p>
+            </div>
+            <div class="step-card">
+                <span>2</span>
+                <h3>Verifikasi Data</h3>
+                <p>Tim admin sekolah akan memeriksa keabsahan berkas data.</p>
+            </div>
+            <div class="step-card">
+                <span>3</span>
+                <h3>Pengumuman</h3>
+                <p>Cek status kelulusan seleksi langsung melalui sistem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulir Pendaftaran -->
+    <section id="daftar" class="container section">
+        <h2>Formulir Pendaftaran Siswa Baru</h2>
+        <form id="spmbForm" class="form-card">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap Calon Siswa</label>
+                <input type="text" id="nama" required placeholder="Contoh: Budi Santoso">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Aktif</label>
+                <input type="email" id="email" required placeholder="Contoh: budi@email.com">
+            </div>
+            <div class="form-group">
+                <label for="jurusan">Pilihan Jurusan / Program</label>
+                <select id="jurusan" required>
+                    <option value="">-- Pilih Jurusan --</option>
+                    <option value="MIPA">Matematika & Ilmu Pengetahuan Alam (MIPA)</option>
+                    <option value="IPS">Ilmu Pengetahuan Sosial (IPS)</option>
+                    <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="asalSekolah">Asal Sekolah (SMP/MTs)</label>
+                <input type="text" id="asalSekolah" required placeholder="Contoh: SMPN 1 Jakarta">
+            </div>
+            <button type="submit" class="btn-primary">Kirim Pendaftaran</button>
+        </form>
+    </section>
+
+    <!-- Tabel Data Pendaftar (Simulasi Dashboard Admin) -->
+    <section id="data" class="container section">
+        <h2>Data Pendaftar Terbaru</h2>
+        <div class="table-responsive">
+            <table id="tabelPendaftar">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Lengkap</th>
+                        <th>Email</th>
+                        <th>Jurusan</th>
+                        <th>Asal Sekolah</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data akan dimasukkan lewat script.js secara dinamis -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Edutech School System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
